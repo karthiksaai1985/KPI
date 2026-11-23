@@ -1,0 +1,66 @@
+Rules to prepare PPT:-
+
+1. Release column >> should be highlighted as below colour depend upon SIT Status:-
+			# Completed- Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green
+ 			# In-Progress - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			# Yet to Start - Light Blue background (Hex Code - #C4EDFC) and Font colour Dark Blue
+			# On-Hold / Awaiting for Fix - Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red
+2. Current Status column >> This week which module (high level) we have completed, in-progress in a Single line stmt
+3. Risk column >> Current Risk in Single line stmt
+4. Mitigation column >>  Mitigation plan for avoiding current risk in Single line stmt.
+5. MileStone column >> DM / PM Committed a date to deliver the release to customer. Criteria as below
+			# Applicable only for Implementation projects.
+			# Mandatory for In-Progress, Yet to Start, Awaiting for Fix SIT Status releases
+			# Update with future date only in DD-MM-YYYY format
+			# Blank for On-Hold Releases
+			
+6. SIT ETA column>> SIT Target Date which SIT team committed to DM / PM
+			# Applicable only for CR's.
+			# Mandatory for In-Progress, Yet to Start, Awaiting for Fix SIT Status releases
+			# Update with future date only in DD-MM-YYYY format
+			# Blank for On-Hold Releases
+
+7. Total Req1 column >> Tot no.of Req Executed / Tot no.of Req
+
+8. Test Execution % column >> should be highlighted as below colour based on Execution %
+			#  0%        - Light Blue background (Hex Code - #C4EDFC) and Font colour Dark Blue
+			#  1% - 49%  - Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red
+			# 50% - 79%  - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			# 80% - 100% - Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green 
+
+9. Unit Test  >> Highlight the cell as below condition.
+			# Not Shared     - Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red
+			# Results Shared - Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green  
+
+10. Automation Coverage % column >> should be highlighted as below colour based on Automated % for that account.
+			#  N/A        - Light Grey background (Hex Code - #F2F2F2) and Font colour Dark Grey
+			#  1% - 49%  - Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red
+			# 50% - 79%  - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			# 80% - 100% - Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green 
+
+11. SIT Approach Column >> Highlight the cell as below condition.
+			# Parallel SIT & UAT     - Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red
+			# SIT First - Manual     - Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green 
+			# SIT First - Automation - Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green 
+
+12. SIT DD² Column >> Highlight the cell as below condition.
+			#  <= 1.0   	- Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green
+			# 1.1 < x < 2.0 - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			#    >= 2.1  	- Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red 
+
+13. UAT DRE² Column >> Highlight the cell as below condition.
+			#  <= 10%   	- Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green
+			# 11% < x < 20% - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			#    >= 21%  	- Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red 
+			
+	Note :- If UAT not released means then update as "Not Released" (Light Grey background (Hex Code - #F2F2F2) and Font colour Dark Grey)
+
+
+14. Prod DRE² Column >> Highlight the cell as below condition.
+			#  <= 3%   	- Light Green background (Hex Code - #D9F2D0) and Font colour Dark Green
+			# 4% < x < 5% - Light Yellow background (Hex Code - #FCF3CF) and Font colour Dark Orange
+			#    >= 6%  	- Light Red background (Hex Code - #F7D9DC) and Font colour Dark Red 
+		
+	Note :- If Prod not released means then update as "Not Released" (Light Grey background (Hex Code - #F2F2F2) and Font colour Dark Grey)
+
+15. Learnings and Actions Column >> Action taken w.r.t Unit Test (Red), Automation Coverage % is Red, SIT DD² is Red, UAT DRE² is Red, Prod DRE² is Red in single line stmt.
