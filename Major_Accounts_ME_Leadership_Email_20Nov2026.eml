@@ -1,1074 +1,216 @@
-Subject: IQA Quality Status | Major Accounts =?utf-8?b?4oCT?= ME | W/E
- 20-Nov-2026 | AMBER =?utf-8?b?4oCT?= 2 escalations need leadership support
-Date: Wed, 25 Nov 2026 11:56:30 -0000
+Subject: Major Accounts =?utf-8?b?4oCT?= ME | Quality status W/E 20-Nov |
+ AMBER =?utf-8?b?4oCT?= 2 escalations needed
+Date: Wed, 25 Nov 2026 11:58:54 -0000
 X-Unsent: 1
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1289475262931115146=="
+Content-Type: multipart/mixed; boundary="===============6175522526148790469=="
 
---===============1289475262931115146==
+--===============6175522526148790469==
 Content-Type: multipart/alternative;
- boundary="===============2979712721252405758=="
+ boundary="===============0287224141537990492=="
 
---===============2979712721252405758==
+--===============0287224141537990492==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-IQA QUALITY STATUS =E2=80=93 MAJOR ACCOUNTS ME | Week ending 20-Nov-2026
-Overall tower status: AMBER (IQA assessment)
+IQA WEEKLY QUALITY STATUS =E2=80=93 MAJOR ACCOUNTS ME | W/E 20-Nov-2026 | AMB=
+ER
 
 Hi all,
 
-Here is this week's quality status for Major Accounts =E2=80=93 ME. Delivery =
-is progressing on the PineLabs (ENBD) CRs, but 3 of 11 releases are blocked, =
-two of them on bank-side dependencies that need leadership escalation.
+Major Accounts =E2=80=93 ME is Amber. PineLabs (ENBD) CRs are on track, but 3=
+ of 11 releases are blocked, and two need a bank-level escalation from leader=
+ship.
 
-BOTTOM LINE
-1. Two escalations need leadership support: AaniPay merchant registration (pe=
-nding since Jun-26) and the Al Rajhi API URL (pending since Aug-25).
-2. Settlement R3 Drop-2 UAT delivery (25-Nov) is at risk until the ADCB vouch=
-ers are released.
-3. Unit test results are shared on only 6 of 11 releases, and 3 releases run =
-SIT and UAT in parallel.
+11 releases in SIT (4 Impl, 7 CR) | 3 blocked | Unit tests shared 55% | Autom=
+ation 73%
 
-KEY NUMBERS
-- Releases in SIT: 11 (4 Impl =C2=B7 7 CR)
-- Blocked: 3 (27% =C2=B7 On-Hold or Awaiting Fix)
-- Unit test results shared: 55% (6 of 11 releases)
-- Automation in place: 73% (8 of 11 releases)
-- SIT DD red: 1 (3 amber =C2=B7 4 green =C2=B7 3 N/A)
-
-DECISIONS AND SUPPORT NEEDED
+YOUR SUPPORT NEEDED
 1. Escalate AaniPay merchant registration with the bank =E2=80=93 PineLabs (W=
-IO) =E2=80=93 AaniPay is on hold; registration pending since Jun-26. [Leaders=
-hip]
-2. Escalate the Al Rajhi API URL and sample request =E2=80=93 Branding & URL =
-Revamp Ph-2 cannot start SIT; pending since Aug-25, no SIT ETA. [Leadership]
-3. Confirm whether Ecentric Phase-1 should be closed out =E2=80=93 Project is=
- marked void but still reports the tower's worst SIT DD (4.73). [Delivery hea=
-d]
+IO) on hold since Jun-26
+2. Escalate the Al Rajhi API URL request =E2=80=93 Blocking SIT start since A=
+ug-25; no ETA
+3. Confirm closure of Ecentric Phase-1 =E2=80=93 Marked void, still the tower=
+'s worst SIT DD (4.73)
 
-QUALITY SCORECARD (Impl | CR | Total | Status)
-- Unit test results shared: 1 of 4 | 5 of 7 | 6 of 11 (55%) | AMBER
-- Automation in place: 3 of 4 | 5 of 7 | 8 of 11 (73%) | AMBER
-- SIT defect density: 1R =C2=B7 1A =C2=B7 2G | 0R =C2=B7 2A =C2=B7 2G =C2=B7 =
-3 N/A | 1R =C2=B7 3A =C2=B7 4G | RED
-- UAT leakage (DRE): 2G =C2=B7 2 not released | 2G =C2=B7 5 not released | No=
- Amber or Red | GREEN
-- Production leakage (DRE): Not released | Not released | =E2=80=93 | N/A
-- SIT and UAT in parallel: 2 of 4 | 1 of 7 | 3 of 11 | RED
+DATES AT RISK
+- 25 Nov: Network Intl =E2=80=93 Settlement R3 Drop-2 =E2=80=93 UAT delivery =
+at risk: ADCB vouchers pending
+- 02 Dec: PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2 =E2=80=93 SIT ETA depen=
+ds on scope approval
+- 18 Dec: NeoLeap-Blaze =E2=80=93 Neoleap Migration =E2=80=93 Only 4% execute=
+d; portal fixes delayed
 
-TOP RISKS
-- PineLabs (WIO) =E2=80=93 AaniPay: Merchant registration pending with bank s=
-ince Jun-26. Impact: Release on hold indefinitely. Mitigation: Leadership esc=
-alation with bank.
-- Network Intl =E2=80=93 Settlement R3 Drop-2: ADCB vouchers not released. Im=
-pact: 25-Nov UAT delivery at risk. Mitigation: Dev team prioritising voucher =
-release.
-- Al Rajhi =E2=80=93 Branding & URL Revamp Ph-2: Bank API URL and sample requ=
-est pending since Aug-25. Impact: SIT cannot start; no ETA. Mitigation: Leade=
-rship escalation with bank.
-- NeoLeap-Blaze =E2=80=93 Neoleap Migration: Merchant and Bank Portal fixes d=
-elayed. Impact: 4% executed vs 18-Dec milestone. Mitigation: Track release fi=
-xes; escalate delays.
-- PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2: Additional scope not yet appro=
-ved. Impact: 02-Dec SIT ETA at risk. Mitigation: Obtain approved scope.
+Quality focus: unit test results are missing on 5 releases and 3 run SIT and =
+UAT in parallel; no UAT or production leakage so far.
 
-RELEASE-LEVEL VIEW (status | exec | unit test | auto | approach | SIT DD | UA=
-T DRE | next)
-- [Impl] Ecentric =E2=80=93 Phase-1: On-Hold | 67% | Not shared | 91% | Paral=
-lel | 4.73 | 0% | Void
-- [Impl] NeoLeap-Blaze =E2=80=93 Neoleap Migration: In-Progress | 4% | Not sh=
-ared | N/A | SIT first | 0.60 | Not rel. | 18-Dec
-- [Impl] PineLabs (WIO) =E2=80=93 AaniPay: On-Hold | 22% | Shared | 37% | Par=
-allel | 0.77 | 0% | Bank
-- [Impl] Network Intl =E2=80=93 Settlement R3 Drop-2: Awaiting Fix | 91% | No=
-t shared | 30% | SIT first | 1.64 | Not rel. | 25-Nov
-- [CR] Al Rajhi =E2=80=93 Branding & URL Revamp Ph-2: Yet to Start | 0% | Sha=
-red | 60% | SIT first | N/A | Not rel. | TBD
-- [CR] PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2: In-Progress | 71% | Share=
-d | 69% | SIT first | 1.50 | Not rel. | 02-Dec
-- [CR] PineLabs (ENBD) =E2=80=93 NON-ASCII: In-Progress | 85% | Shared | 69% =
-| Parallel | 0.50 | 0% | 30-Nov
-- [CR] PineLabs (ENBD) =E2=80=93 Multi paybylink: In-Progress | 59% | Shared =
-| 69% | SIT first (Auto) | N/A | Not rel. | 27-Nov
-- [CR] PineLabs (ENBD) =E2=80=93 Domain Whitelisting: In-Progress | 70% | Sha=
-red | 69% | SIT first | 1.00 | Not rel. | 27-Nov
-- [CR] Network Intl =E2=80=93 Real Time Chargeback: In-Progress | 0% | Not sh=
-ared | N/A | SIT first | N/A | Not rel. | 29-Jan-27
-- [CR] Network Intl =E2=80=93 Multiple File Process: Completed | 100% | Not s=
-hared | N/A | SIT first | 2.00 | 0% | Done
-
-UPCOMING MILESTONES
-- 25 Nov: Network Intl =E2=80=93 Settlement R3 Drop-2 (UAT delivery)
-- 27 Nov: PineLabs (ENBD) =E2=80=93 Multi paybylink (SIT ETA)
-- 27 Nov: PineLabs (ENBD) =E2=80=93 Domain Whitelisting (SIT ETA)
-- 30 Nov: PineLabs (ENBD) =E2=80=93 NON-ASCII (SIT ETA)
-- 02 Dec: PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2 (SIT ETA =C2=B7 scope a=
-pproval pending)
-- 18 Dec: NeoLeap-Blaze =E2=80=93 Neoleap Migration (Milestone)
-- 29 Jan 2027: Network Intl =E2=80=93 Real Time Chargeback (SIT ETA =C2=B7 aw=
-aiting release)
-
-HIGHLIGHTS
-- Multiple File Process (Network Intl) completed SIT: 100% executed, 0% UAT l=
-eakage.
-- NON-ASCII (PineLabs ENBD) at 85% executed, SIT DD 0.50, 0% UAT leakage.
-- PineLabs (ENBD) CRs: unit test results shared on all four; automation at 69=
-%.
-
-QUALITY ACTIONS IN PROGRESS
-- Unit testing: get results shared on the remaining 5 releases (Network Intl =
-and Ecentric are the gaps).
-- Defect RCA: enforce on releases rated Amber or Red for SIT DD.
-- Separate SIT and UAT on the 3 releases running in parallel.
-- Automation: raise AaniPay (37%) and Settlement R3 (30%); whitelist the URL =
-to start scripting on Neoleap Migration.
-
-The full deck is attached for release-level detail.
+Release-level detail is in the attached deck.
 
 Regards,
 [Your name]
 IQA =E2=80=93 Major Accounts ME
 
---===============2979712721252405758==
+--===============0287224141537990492==
 Content-Type: text/html; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 MIME-Version: 1.0
 
-<!DOCTYPE html><html><head><meta charset=3D"utf-8"><meta name=3D"viewport" co=
-ntent=3D"width=3Ddevice-width">
-<title>IQA Quality Status =E2=80=93 Major Accounts ME</title></head>
+<!DOCTYPE html><html><head><meta charset=3D"utf-8"><title>IQA Quality Status =
+=E2=80=93 Major Accounts ME</title></head>
 <body style=3D"margin:0;padding:0;background:#F3F4F6;">
-<div style=3D"display:none;max-height:0;overflow:hidden;opacity:0;">11 releas=
-es in SIT =C2=B7 3 blocked =C2=B7 2 bank escalations need leadership support =
-this week.</div>
+<div style=3D"display:none;max-height:0;overflow:hidden;opacity:0;">AMBER =C2=
+=B7 3 of 11 releases blocked =C2=B7 2 bank escalations need your support.</di=
+v>
 <table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
-0" border=3D"0" bgcolor=3D"#F3F4F6" style=3D"background:#F3F4F6;">
-<tr><td align=3D"center" style=3D"padding:24px 12px;">
-<table role=3D"presentation" width=3D"760" cellpadding=3D"0" cellspacing=3D"0=
-" border=3D"0" bgcolor=3D"#FFFFFF" style=3D"width:760px;max-width:760px;backg=
+0" border=3D"0" bgcolor=3D"#F3F4F6" style=3D"background:#F3F4F6;"><tr><td ali=
+gn=3D"center" style=3D"padding:24px 12px;">
+<table role=3D"presentation" width=3D"640" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" bgcolor=3D"#FFFFFF" style=3D"width:640px;max-width:640px;backg=
 round:#FFFFFF;border:1px solid #E3E5E8;">
-<tr><td bgcolor=3D"#333333" style=3D"background:#333333;padding:26px 32px 22p=
-x 32px;">
+<tr><td bgcolor=3D"#333333" style=3D"background:#333333;padding:22px 28px;">
 <table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
 0" border=3D"0"><tr>
-<td valign=3D"top">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-letter-spacing:2px;color:#BFBFBF;text-transform:uppercase;">IQA =C2=B7 Qualit=
-y Status Report</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:26px;=
-font-weight:700;color:#FFFFFF;padding-top:6px;">Major Accounts =E2=80=93 ME</=
+<td valign=3D"middle"><div style=3D"font-family:'Segoe UI',Calibri,Arial,sans=
+-serif;font-size:11px;letter-spacing:2px;color:#BFBFBF;text-transform:upperca=
+se;">IQA =C2=B7 Weekly quality status</div>
+<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:23px;=
+font-weight:700;color:#FFFFFF;padding-top:4px;">Major Accounts =E2=80=93 ME</=
 div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:13px;=
-color:#D9D9D9;padding-top:4px;">Week ending 20-Nov-2026 &nbsp;|&nbsp; 11 rele=
-ases in SIT &nbsp;|&nbsp; 4 Implementation &nbsp;=C2=B7&nbsp; 7 CR</div>
-</td>
-<td valign=3D"top" align=3D"right" width=3D"170">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-letter-spacing:1px;color:#BFBFBF;text-transform:uppercase;padding-bottom:6px;=
-">Overall tower status</div>
-<span style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline=
--block;background:#FCF3CF;color:#A54B00;font-size:14px;font-weight:700;paddin=
-g:2px 8px;border-radius:10px;white-space:nowrap;">AMBER</span>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#D9D9D9;padding-top:6px;">IQA assessment</div>
-</td></tr></table></td></tr>
+<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;=
+color:#D9D9D9;padding-top:3px;">Week ending 20-Nov-2026</div></td>
+<td valign=3D"middle" align=3D"right"><span style=3D"font-family:'Segoe UI',C=
+alibri,Arial,sans-serif;display:inline-block;background:#FCF3CF;color:#A54B00=
+;font-size:14px;font-weight:700;padding:2px 9px;border-radius:10px;white-spac=
+e:nowrap;">AMBER</span></td></tr></table></td></tr>
 <tr><td bgcolor=3D"#C8102E" style=3D"background:#C8102E;height:4px;line-heigh=
 t:4px;font-size:0;">&nbsp;</td></tr>
-<tr><td style=3D"padding:24px 32px 0 32px;font-family:'Segoe UI',Calibri,Aria=
+
+<tr><td style=3D"padding:22px 28px 0 28px;font-family:'Segoe UI',Calibri,Aria=
 l,sans-serif;font-size:14px;color:#30343B;line-height:21px;">
 Hi all,<br><br>
-Here is this week's quality status for <b>Major Accounts =E2=80=93 ME</b>. De=
-livery is progressing on the PineLabs (ENBD) CRs,
-but <b>3 of 11 releases are blocked</b>, two of them on bank-side dependencie=
-s that need leadership escalation.
+<b>Major Accounts =E2=80=93 ME is Amber.</b> PineLabs (ENBD) CRs are on track=
+, but <b>3 of 11 releases are blocked</b>, and two need a bank-level escalati=
+on from leadership.
 </td></tr>
-<tr><td style=3D"padding:16px 32px 0 32px;">
-<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
-0" border=3D"0" bgcolor=3D"#F7F8F9" style=3D"background:#F7F8F9;border:1px so=
-lid #E3E5E8;">
-<tr><td style=3D"padding:14px 18px;font-family:'Segoe UI',Calibri,Arial,sans-=
-serif;font-size:13px;color:#30343B;line-height:20px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-letter-spacing:1px;color:#7F7F7F;text-transform:uppercase;padding-bottom:6px;=
-">Bottom line</div>
-<b>1.</b> Two escalations need leadership support: <b>AaniPay merchant regist=
-ration</b> (pending since Jun-26) and the <b>Al Rajhi API URL</b> (pending si=
-nce Aug-25).<br>
-<b>2.</b> <b>Settlement R3 Drop-2</b> UAT delivery (25-Nov) is at risk until =
-the ADCB vouchers are released.<br>
-<b>3.</b> Quality hygiene is the main gap: unit test results are shared on on=
-ly <b>6 of 11</b> releases, and <b>3 releases</b> run SIT and UAT in parallel.
-</td></tr></table></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">This week at a glance</div><div style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:17px;font-weight:700;color=
-:#30343B;">Key numbers</div></td></tr>
-<tr><td style=3D"padding:4px 26px 0 26px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"6" border=3D"0"><tr>
-<td width=3D"20%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
-8F9;border:1px solid #E3E5E8;padding:12px 12px 10px 12px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#595959;font-weight:600;height:30px;">Releases in SIT</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:30px;=
-font-weight:700;color:#30343B;line-height:34px;">11</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:2px;">4 Impl =C2=B7 7 CR</div></td>
-<td width=3D"20%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
-8F9;border:1px solid #E3E5E8;padding:12px 12px 10px 12px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#595959;font-weight:600;height:30px;"><span style=3D"display:inline-blo=
-ck;width:9px;height:9px;border-radius:5px;background:#C00000;"></span>&nbsp;B=
-locked</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:30px;=
-font-weight:700;color:#30343B;line-height:34px;">3</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:2px;">27% =C2=B7 On-Hold or Awaiting Fix</div></td>
-<td width=3D"20%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
-8F9;border:1px solid #E3E5E8;padding:12px 12px 10px 12px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#595959;font-weight:600;height:30px;"><span style=3D"display:inline-blo=
-ck;width:9px;height:9px;border-radius:5px;background:#A54B00;"></span>&nbsp;U=
-nit test results shared</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:30px;=
-font-weight:700;color:#30343B;line-height:34px;">55%</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:2px;">6 of 11 releases</div></td>
-<td width=3D"20%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
-8F9;border:1px solid #E3E5E8;padding:12px 12px 10px 12px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#595959;font-weight:600;height:30px;"><span style=3D"display:inline-blo=
-ck;width:9px;height:9px;border-radius:5px;background:#A54B00;"></span>&nbsp;A=
-utomation in place</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:30px;=
-font-weight:700;color:#30343B;line-height:34px;">73%</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:2px;">8 of 11 releases</div></td>
-<td width=3D"20%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
-8F9;border:1px solid #E3E5E8;padding:12px 12px 10px 12px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#595959;font-weight:600;height:30px;"><span style=3D"display:inline-blo=
-ck;width:9px;height:9px;border-radius:5px;background:#C00000;"></span>&nbsp;S=
-IT DD red</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:30px;=
-font-weight:700;color:#30343B;line-height:34px;">1</div>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:2px;">3 amber =C2=B7 4 green =C2=B7 3 N/A</div></td>
+<tr><td style=3D"padding:16px 22px 0 22px;"><table role=3D"presentation" widt=
+h=3D"100%" cellpadding=3D"0" cellspacing=3D"6" border=3D"0"><tr>
+<td width=3D"25%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
+8F9;border:1px solid #E3E5E8;padding:10px 12px;"><div style=3D"font-family:'S=
+egoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;font-weight:60=
+0;">Releases in SIT</div><div style=3D"font-family:'Segoe UI',Calibri,Arial,s=
+ans-serif;font-size:26px;font-weight:700;color:#30343B;line-height:32px;">11<=
+/div><div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
+11px;color:#7F7F7F;">4 Impl =C2=B7 7 CR</div></td>
+<td width=3D"25%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
+8F9;border:1px solid #E3E5E8;padding:10px 12px;"><div style=3D"font-family:'S=
+egoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;font-weight:60=
+0;"><span style=3D"display:inline-block;width:8px;height:8px;border-radius:4p=
+x;background:#C00000;"></span>&nbsp;Blocked</div><div style=3D"font-family:'S=
+egoe UI',Calibri,Arial,sans-serif;font-size:26px;font-weight:700;color:#30343=
+B;line-height:32px;">3</div><div style=3D"font-family:'Segoe UI',Calibri,Aria=
+l,sans-serif;font-size:11px;color:#7F7F7F;">On-Hold or Awaiting Fix</div></td>
+<td width=3D"25%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
+8F9;border:1px solid #E3E5E8;padding:10px 12px;"><div style=3D"font-family:'S=
+egoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;font-weight:60=
+0;"><span style=3D"display:inline-block;width:8px;height:8px;border-radius:4p=
+x;background:#A54B00;"></span>&nbsp;Unit tests shared</div><div style=3D"font=
+-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:26px;font-weight:700;co=
+lor:#30343B;line-height:32px;">55%</div><div style=3D"font-family:'Segoe UI',=
+Calibri,Arial,sans-serif;font-size:11px;color:#7F7F7F;">6 of 11 releases</div=
+></td>
+<td width=3D"25%" valign=3D"top" bgcolor=3D"#F7F8F9" style=3D"background:#F7F=
+8F9;border:1px solid #E3E5E8;padding:10px 12px;"><div style=3D"font-family:'S=
+egoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;font-weight:60=
+0;"><span style=3D"display:inline-block;width:8px;height:8px;border-radius:4p=
+x;background:#A54B00;"></span>&nbsp;Automation</div><div style=3D"font-family=
+:'Segoe UI',Calibri,Arial,sans-serif;font-size:26px;font-weight:700;color:#30=
+343B;line-height:32px;">73%</div><div style=3D"font-family:'Segoe UI',Calibri=
+,Arial,sans-serif;font-size:11px;color:#7F7F7F;">8 of 11 releases</div></td>
 </tr></table></td></tr>
-<tr><td style=3D"padding:16px 32px 0 32px;"><div style=3D"font-family:'Segoe =
-UI',Calibri,Arial,sans-serif;font-size:12px;font-weight:700;color:#595959;pad=
-ding-bottom:6px;">SIT status mix (11 releases)</div>
-<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
-0" border=3D"0"><tr>
-<td width=3D"9%" bgcolor=3D"#D9F2D0" align=3D"center" style=3D"background:#D9=
-F2D0;border-right:2px solid #FFFFFF;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:12px;font-weight:700;color:#00823B;padding:7px 0;">1</td>
-<td width=3D"55%" bgcolor=3D"#FCF3CF" align=3D"center" style=3D"background:#F=
-CF3CF;border-right:2px solid #FFFFFF;font-family:'Segoe UI',Calibri,Arial,san=
-s-serif;font-size:12px;font-weight:700;color:#A54B00;padding:7px 0;">6</td>
-<td width=3D"9%" bgcolor=3D"#C4EDFC" align=3D"center" style=3D"background:#C4=
-EDFC;border-right:2px solid #FFFFFF;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:12px;font-weight:700;color:#1F4E79;padding:7px 0;">1</td>
-<td width=3D"18%" bgcolor=3D"#F7D9DC" align=3D"center" style=3D"background:#F=
-7D9DC;border-right:2px solid #FFFFFF;font-family:'Segoe UI',Calibri,Arial,san=
-s-serif;font-size:12px;font-weight:700;color:#C00000;padding:7px 0;">2</td>
-<td width=3D"9%" bgcolor=3D"#F7D9DC" align=3D"center" style=3D"background:#F7=
-D9DC;border-right:2px solid #FFFFFF;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:12px;font-weight:700;color:#C00000;padding:7px 0;">1</td>
-</tr></table>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-color:#7F7F7F;padding-top:6px;"><span style=3D"display:inline-block;width:9px=
-;height:9px;background:#D9F2D0;border:1px solid #00823B;"></span> Completed (=
-1) &nbsp; <span style=3D"display:inline-block;width:9px;height:9px;background=
-:#FCF3CF;border:1px solid #A54B00;"></span> In-Progress (6) &nbsp; <span styl=
-e=3D"display:inline-block;width:9px;height:9px;background:#C4EDFC;border:1px =
-solid #1F4E79;"></span> Yet to Start (1) &nbsp; <span style=3D"display:inline=
--block;width:9px;height:9px;background:#F7D9DC;border:1px solid #C00000;"></s=
-pan> On-Hold (2) &nbsp; <span style=3D"display:inline-block;width:9px;height:=
-9px;background:#F7D9DC;border:1px solid #C00000;"></span> Awaiting Fix (1)</d=
-iv></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">Action for leadership</div><div style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:17px;font-weight:700;color=
-:#30343B;">Decisions and support needed</div></td></tr>
-<tr><td style=3D"padding:4px 32px 0 32px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgcolor=3D"#FDF3F4=
-" style=3D"background:#FDF3F4;border:1px solid #F0C4C9;">
-<tr><td width=3D"36" valign=3D"top" style=3D"padding:12px 0 12px 16px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;width:24px;heig=
-ht:24px;line-height:24px;border-radius:12px;background:#C00000;color:#FFFFFF;=
-font-size:12px;font-weight:700;text-align:center;">1</div></td>
-<td valign=3D"top" style=3D"padding:12px 16px 12px 8px;font-family:'Segoe UI'=
-,Calibri,Arial,sans-serif;">
-<div style=3D"font-size:14px;font-weight:700;color:#30343B;">Escalate AaniPay=
- merchant registration with the bank</div>
-<div style=3D"font-size:12px;color:#595959;padding-top:2px;">PineLabs (WIO) =
-=E2=80=93 AaniPay is on hold; registration pending since Jun-26.</div></td>
-<td width=3D"110" valign=3D"top" align=3D"right" style=3D"padding:14px 16px 1=
-2px 0;"><span style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;displa=
-y:inline-block;background:#F2F2F2;color:#595959;font-size:10px;font-weight:70=
-0;padding:2px 8px;border-radius:10px;white-space:nowrap;">Leadership</span></=
-td></tr>
-<tr><td width=3D"36" valign=3D"top" style=3D"border-top:1px solid #F0C4C9;pad=
-ding:12px 0 12px 16px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;width:24px;heig=
-ht:24px;line-height:24px;border-radius:12px;background:#C00000;color:#FFFFFF;=
-font-size:12px;font-weight:700;text-align:center;">2</div></td>
-<td valign=3D"top" style=3D"border-top:1px solid #F0C4C9;padding:12px 16px 12=
-px 8px;font-family:'Segoe UI',Calibri,Arial,sans-serif;">
-<div style=3D"font-size:14px;font-weight:700;color:#30343B;">Escalate the Al =
-Rajhi API URL and sample request</div>
-<div style=3D"font-size:12px;color:#595959;padding-top:2px;">Branding &amp; U=
-RL Revamp Ph-2 cannot start SIT; pending since Aug-25, no SIT ETA.</div></td>
-<td width=3D"110" valign=3D"top" align=3D"right" style=3D"border-top:1px soli=
-d #F0C4C9;padding:14px 16px 12px 0;"><span style=3D"font-family:'Segoe UI',Ca=
-libri,Arial,sans-serif;display:inline-block;background:#F2F2F2;color:#595959;=
-font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space=
-:nowrap;">Leadership</span></td></tr>
-<tr><td width=3D"36" valign=3D"top" style=3D"border-top:1px solid #F0C4C9;pad=
-ding:12px 0 12px 16px;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;width:24px;heig=
-ht:24px;line-height:24px;border-radius:12px;background:#C00000;color:#FFFFFF;=
-font-size:12px;font-weight:700;text-align:center;">3</div></td>
-<td valign=3D"top" style=3D"border-top:1px solid #F0C4C9;padding:12px 16px 12=
-px 8px;font-family:'Segoe UI',Calibri,Arial,sans-serif;">
-<div style=3D"font-size:14px;font-weight:700;color:#30343B;">Confirm whether =
-Ecentric Phase-1 should be closed out</div>
-<div style=3D"font-size:12px;color:#595959;padding-top:2px;">Project is marke=
-d void but still reports the tower's worst SIT DD (4.73).</div></td>
-<td width=3D"110" valign=3D"top" align=3D"right" style=3D"border-top:1px soli=
-d #F0C4C9;padding:14px 16px 12px 0;"><span style=3D"font-family:'Segoe UI',Ca=
-libri,Arial,sans-serif;display:inline-block;background:#F2F2F2;color:#595959;=
-font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space=
-:nowrap;">Delivery head</span></td></tr>
+<tr><td style=3D"padding:20px 28px 0 28px;"><div style=3D"font-family:'Segoe =
+UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7F;=
+text-transform:uppercase;padding-bottom:8px;">Your support needed</div><table=
+ role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" bgcolor=3D"#FDF3F4" style=3D"background:#FDF3F4;border:1px solid #F=
+0C4C9;">
+<tr><td width=3D"34" valign=3D"top" style=3D"padding:11px 0 11px 14px;"><div =
+style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;width:22px;height:22=
+px;line-height:22px;border-radius:11px;background:#C00000;color:#FFFFFF;font-=
+size:12px;font-weight:700;text-align:center;">1</div></td><td style=3D"paddin=
+g:11px 14px 11px 6px;font-family:'Segoe UI',Calibri,Arial,sans-serif;"><span =
+style=3D"font-size:14px;font-weight:700;color:#30343B;">Escalate AaniPay merc=
+hant registration with the bank</span><br><span style=3D"font-size:12px;color=
+:#595959;">PineLabs (WIO) on hold since Jun-26</span></td></tr>
+<tr><td width=3D"34" valign=3D"top" style=3D"border-top:1px solid #F0C4C9;pad=
+ding:11px 0 11px 14px;"><div style=3D"font-family:'Segoe UI',Calibri,Arial,sa=
+ns-serif;width:22px;height:22px;line-height:22px;border-radius:11px;backgroun=
+d:#C00000;color:#FFFFFF;font-size:12px;font-weight:700;text-align:center;">2<=
+/div></td><td style=3D"border-top:1px solid #F0C4C9;padding:11px 14px 11px 6p=
+x;font-family:'Segoe UI',Calibri,Arial,sans-serif;"><span style=3D"font-size:=
+14px;font-weight:700;color:#30343B;">Escalate the Al Rajhi API URL request</s=
+pan><br><span style=3D"font-size:12px;color:#595959;">Blocking SIT start sinc=
+e Aug-25; no ETA</span></td></tr>
+<tr><td width=3D"34" valign=3D"top" style=3D"border-top:1px solid #F0C4C9;pad=
+ding:11px 0 11px 14px;"><div style=3D"font-family:'Segoe UI',Calibri,Arial,sa=
+ns-serif;width:22px;height:22px;line-height:22px;border-radius:11px;backgroun=
+d:#C00000;color:#FFFFFF;font-size:12px;font-weight:700;text-align:center;">3<=
+/div></td><td style=3D"border-top:1px solid #F0C4C9;padding:11px 14px 11px 6p=
+x;font-family:'Segoe UI',Calibri,Arial,sans-serif;"><span style=3D"font-size:=
+14px;font-weight:700;color:#30343B;">Confirm closure of Ecentric Phase-1</spa=
+n><br><span style=3D"font-size:12px;color:#595959;">Marked void, still the to=
+wer's worst SIT DD (4.73)</span></td></tr>
 </table></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">Implementation vs CR</div><div style=3D"font-fam=
-ily:'Segoe UI',Calibri,Arial,sans-serif;font-size:17px;font-weight:700;color:=
-#30343B;">Quality scorecard</div></td></tr>
-<tr><td style=3D"padding:4px 32px 0 32px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border:1p=
-x solid #E3E5E8;"><tr bgcolor=3D"#333333" style=3D"background:#333333;"><td s=
-tyle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;font-w=
-eight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">KPI</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;font-weigh=
-t:700;color:#FFFFFF;padding:8px 10px;text-align:left;">Implementation (4)</td=
-><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">CR (7)</td><=
-td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;fo=
-nt-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">Total (11)</td=
-><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;text-align:cen=
-ter;">Status</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">Unit test results shared</td><td style=3D"font-family:'Segoe UI',Calib=
-ri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bott=
-om:1px solid #E3E5E8;">1 of 4</td><td style=3D"font-family:'Segoe UI',Calibri=
-,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom=
-:1px solid #E3E5E8;">5 of 7</td><td style=3D"font-family:'Segoe UI',Calibri,A=
-rial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1=
-px solid #E3E5E8;font-weight:700;">6 of 11 (55%)</td><td align=3D"center" sty=
-le=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#3=
-0343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;"><span style=3D"font-=
-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block;background:#F=
-CF3CF;color:#A54B00;font-size:10px;font-weight:700;padding:2px 8px;border-rad=
-ius:10px;white-space:nowrap;">AMBER</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:=
-#F9FAFB;font-weight:700;">Automation in place</td><td style=3D"font-family:'S=
-egoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10=
-px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;">3 of 4</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#303=
-43B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;">5 o=
-f 7</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;backgro=
-und:#F9FAFB;font-weight:700;">8 of 11 (73%)</td><td align=3D"center" style=3D=
-"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B=
-;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;"><span =
-style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block=
-;background:#FCF3CF;color:#A54B00;font-size:10px;font-weight:700;padding:2px =
-8px;border-radius:10px;white-space:nowrap;">AMBER</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">SIT defect density</td><td style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px=
- solid #E3E5E8;">1R =C2=B7 1A =C2=B7 2G</td><td style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;bor=
-der-bottom:1px solid #E3E5E8;">0R =C2=B7 2A =C2=B7 2G =C2=B7 3 N/A</td><td st=
-yle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#=
-30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight:700;">1R =
-=C2=B7 3A =C2=B7 4G</td><td align=3D"center" style=3D"font-family:'Segoe UI',=
-Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border=
--bottom:1px solid #E3E5E8;"><span style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;display:inline-block;background:#F7D9DC;color:#C00000;font-size=
-:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap;"=
->RED</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:=
-#F9FAFB;font-weight:700;">UAT leakage (DRE)</td><td style=3D"font-family:'Seg=
-oe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px=
-;border-bottom:1px solid #E3E5E8;background:#F9FAFB;">2G =C2=B7 2 not release=
-d</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
-12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;backgroun=
-d:#F9FAFB;">2G =C2=B7 5 not released</td><td style=3D"font-family:'Segoe UI',=
-Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border=
--bottom:1px solid #E3E5E8;background:#F9FAFB;font-weight:700;">No Amber or Re=
-d</td><td align=3D"center" style=3D"font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid =
-#E3E5E8;background:#F9FAFB;"><span style=3D"font-family:'Segoe UI',Calibri,Ar=
-ial,sans-serif;display:inline-block;background:#D9F2D0;color:#00823B;font-siz=
-e:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap;=
-">GREEN</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">Production leakage (DRE)</td><td style=3D"font-family:'Segoe UI',Calib=
-ri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bott=
-om:1px solid #E3E5E8;">Not released</td><td style=3D"font-family:'Segoe UI',C=
-alibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-=
-bottom:1px solid #E3E5E8;">Not released</td><td style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;bor=
-der-bottom:1px solid #E3E5E8;font-weight:700;">=E2=80=93</td><td align=3D"cen=
-ter" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;=
-color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;"><span style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block;back=
-ground:#F2F2F2;color:#595959;font-size:10px;font-weight:700;padding:2px 8px;b=
-order-radius:10px;white-space:nowrap;">N/A</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:=
-#F9FAFB;font-weight:700;">SIT and UAT in parallel</td><td style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8p=
-x 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;">2 of 4</td><td st=
-yle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#=
-30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;">=
-1 of 7</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-=
-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;back=
-ground:#F9FAFB;font-weight:700;">3 of 11</td><td align=3D"center" style=3D"fo=
-nt-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;pa=
-dding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;"><span sty=
-le=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block;ba=
-ckground:#F7D9DC;color:#C00000;font-size:10px;font-weight:700;padding:2px 8px=
-;border-radius:10px;white-space:nowrap;">RED</span></td></tr>
+<tr><td style=3D"padding:20px 28px 0 28px;"><div style=3D"font-family:'Segoe =
+UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7F;=
+text-transform:uppercase;padding-bottom:8px;">Dates at risk</div><table role=
+=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0">
+<tr><td width=3D"78" valign=3D"middle" style=3D"padding:5px 0;"><div style=3D=
+"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#F7D9DC;color:#C0=
+0000;font-size:12px;font-weight:700;text-align:center;padding:5px 0;border-ra=
+dius:4px;">25 Nov</div></td><td style=3D"padding:6px 0 6px 12px;border-bottom=
+:1px solid #E3E5E8;font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
+13px;color:#30343B;"><b>Network Intl =E2=80=93 Settlement R3 Drop-2</b><br><s=
+pan style=3D"font-size:12px;color:#595959;">UAT delivery at risk: ADCB vouche=
+rs pending</span></td></tr>
+<tr><td width=3D"78" valign=3D"middle" style=3D"padding:5px 0;"><div style=3D=
+"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF3CF;color:#A5=
+4B00;font-size:12px;font-weight:700;text-align:center;padding:5px 0;border-ra=
+dius:4px;">02 Dec</div></td><td style=3D"padding:6px 0 6px 12px;border-bottom=
+:1px solid #E3E5E8;font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
+13px;color:#30343B;"><b>PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2</b><br><s=
+pan style=3D"font-size:12px;color:#595959;">SIT ETA depends on scope approval=
+</span></td></tr>
+<tr><td width=3D"78" valign=3D"middle" style=3D"padding:5px 0;"><div style=3D=
+"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF3CF;color:#A5=
+4B00;font-size:12px;font-weight:700;text-align:center;padding:5px 0;border-ra=
+dius:4px;">18 Dec</div></td><td style=3D"padding:6px 0 6px 12px;border-bottom=
+:1px solid #E3E5E8;font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
+13px;color:#30343B;"><b>NeoLeap-Blaze =E2=80=93 Neoleap Migration</b><br><spa=
+n style=3D"font-size:12px;color:#595959;">Only 4% executed; portal fixes dela=
+yed</span></td></tr>
 </table></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">What could move the dates</div><div style=3D"fon=
-t-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:17px;font-weight:700;c=
-olor:#30343B;">Top risks</div></td></tr>
-<tr><td style=3D"padding:4px 32px 0 32px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border:1p=
-x solid #E3E5E8;"><tr bgcolor=3D"#333333" style=3D"background:#333333;"><td s=
-tyle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;font-w=
-eight:700;color:#FFFFFF;padding:8px 10px;text-align:left;" width=3D"26%">Rele=
-ase</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:11px;font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">Risk<=
-/td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">Impact</t=
-d><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;">Mitigation<=
-/td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;font-weight:700;color:#FFFFFF;padding:8px 10px;text-align:left;text-align:=
-center;">Severity</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">PineLabs (WIO) =E2=80=93 AaniPay</td><td style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;bor=
-der-bottom:1px solid #E3E5E8;">Merchant registration pending with bank since =
-Jun-26</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-=
-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;">Re=
-lease on hold indefinitely</td><td style=3D"font-family:'Segoe UI',Calibri,Ar=
-ial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1p=
-x solid #E3E5E8;">Leadership escalation with bank</td><td align=3D"center" st=
-yle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#=
-30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;"><span style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block;background:#=
-F7D9DC;color:#C00000;font-size:10px;font-weight:700;padding:2px 8px;border-ra=
-dius:10px;white-space:nowrap;">High</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:=
-#F9FAFB;font-weight:700;">Network Intl =E2=80=93 Settlement R3 Drop-2</td><td=
- style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;colo=
-r:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB=
-;">ADCB vouchers not released</td><td style=3D"font-family:'Segoe UI',Calibri=
-,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom=
-:1px solid #E3E5E8;background:#F9FAFB;">25-Nov UAT delivery at risk</td><td s=
-tyle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:=
-#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;"=
->Dev team prioritising voucher release</td><td align=3D"center" style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padd=
-ing:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;"><span style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-block;back=
-ground:#F7D9DC;color:#C00000;font-size:10px;font-weight:700;padding:2px 8px;b=
-order-radius:10px;white-space:nowrap;">High</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">Al Rajhi =E2=80=93 Branding &amp; URL Revamp Ph-2</td><td style=3D"fon=
-t-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;pad=
-ding:8px 10px;border-bottom:1px solid #E3E5E8;">Bank API URL and sample reque=
-st pending since Aug-25</td><td style=3D"font-family:'Segoe UI',Calibri,Arial=
-,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px s=
-olid #E3E5E8;">SIT cannot start; no ETA</td><td style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;bor=
-der-bottom:1px solid #E3E5E8;">Leadership escalation with bank</td><td align=
-=3D"center" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;"><span=
- style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inline-bloc=
-k;background:#F7D9DC;color:#C00000;font-size:10px;font-weight:700;padding:2px=
- 8px;border-radius:10px;white-space:nowrap;">High</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:=
-#F9FAFB;font-weight:700;">NeoLeap-Blaze =E2=80=93 Neoleap Migration</td><td s=
-tyle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:=
-#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;"=
->Merchant and Bank Portal fixes delayed</td><td style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;bor=
-der-bottom:1px solid #E3E5E8;background:#F9FAFB;">4% executed vs 18-Dec miles=
-tone</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;backgr=
-ound:#F9FAFB;">Track release fixes; escalate delays</td><td align=3D"center" =
-style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color=
-:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;background:#F9FAFB;=
-"><span style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;display:inli=
-ne-block;background:#FCF3CF;color:#A54B00;font-size:10px;font-weight:700;padd=
-ing:2px 8px;border-radius:10px;white-space:nowrap;">Medium</span></td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12=
-px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;font-weight=
-:700;">PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2</td><td style=3D"font-fami=
-ly:'Segoe UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8=
-px 10px;border-bottom:1px solid #E3E5E8;">Additional scope not yet approved</=
-td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:12p=
-x;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E8;">02-Dec SIT=
- ETA at risk</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif=
-;font-size:12px;color:#30343B;padding:8px 10px;border-bottom:1px solid #E3E5E=
-8;">Obtain approved scope</td><td align=3D"center" style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:12px;color:#30343B;padding:8px 10px;=
-border-bottom:1px solid #E3E5E8;"><span style=3D"font-family:'Segoe UI',Calib=
-ri,Arial,sans-serif;display:inline-block;background:#FCF3CF;color:#A54B00;fon=
-t-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:no=
-wrap;">Medium</span></td></tr>
-</table></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">All 11 releases =C2=B7 colours follow the IQA ru=
-les</div><div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-s=
-ize:17px;font-weight:700;color:#30343B;">Release-level view</div></td></tr>
-<tr><td style=3D"padding:4px 32px 0 32px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border:1p=
-x solid #E3E5E8;">
-<tr bgcolor=3D"#333333" style=3D"background:#333333;"><td style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weight:700;color:#F=
-FFFFF;padding:7px 5px;text-align:center;text-align:left;">Release</td><td sty=
-le=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-wei=
-ght:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Type</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weigh=
-t:700;color:#FFFFFF;padding:7px 5px;text-align:center;">SIT status</td><td st=
-yle=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-we=
-ight:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Exec</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weigh=
-t:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Unit test</td><td sty=
-le=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-wei=
-ght:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Auto</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weigh=
-t:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Approach</td><td styl=
-e=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weig=
-ht:700;color:#FFFFFF;padding:7px 5px;text-align:center;">SIT DD</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weigh=
-t:700;color:#FFFFFF;padding:7px 5px;text-align:center;">UAT DRE</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;font-weigh=
-t:700;color:#FFFFFF;padding:7px 5px;text-align:center;">Next</td></tr>
-<tr><td colspan=3D"10" bgcolor=3D"#F3F4F6" style=3D"background:#F3F4F6;font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;color:#7F7F7F;paddin=
-g:4px 8px;letter-spacing:1px;text-transform:uppercase;">Implementation projec=
-ts</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">Ecentric =E2=80=93 Phase-1</td><td style=3D"font-family:'Segoe UI',Cali=
-bri,Arial,sans-serif;font-size:11px;color:#595959;padding:6px 5px;border-bott=
-om:1px solid #E3E5E8;text-align:center;">Impl</td><td bgcolor=3D"#F7D9DC" sty=
-le=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:=
-6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-a=
-lign:center;font-weight:700;background:#F7D9DC;color:#C00000;">On-Hold</td><t=
-d bgcolor=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-seri=
-f;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right=
-:1px solid #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color=
-:#A54B00;">67%</td><td bgcolor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Ca=
-libri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid=
- #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;bac=
-kground:#F7D9DC;color:#C00000;">Not shared</td><td bgcolor=3D"#D9F2D0" style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6p=
-x 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-ali=
-gn:center;font-weight:700;background:#D9F2D0;color:#00823B;">91%</td><td bgco=
-lor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font=
--size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px s=
-olid #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC;color:#C000=
-00;">Parallel</td><td bgcolor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Cal=
-ibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid =
-#FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;back=
-ground:#F7D9DC;color:#C00000;">4.73</td><td bgcolor=3D"#D9F2D0" style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bo=
-rder-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:cente=
-r;font-weight:700;background:#D9F2D0;color:#00823B;">0%</td><td style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#30343B;padd=
-ing:6px 5px;border-bottom:1px solid #E3E5E8;text-align:center;white-space:now=
-rap;font-weight:700;">Void</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">NeoLeap-Blaze =E2=80=93 Neoleap Migration</td><td style=3D"font-family:=
-'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6px =
-5px;border-bottom:1px solid #E3E5E8;text-align:center;">Impl</td><td bgcolor=
-=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;=
-">In-Progress</td><td bgcolor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Cal=
-ibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid =
-#FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;back=
-ground:#F7D9DC;color:#C00000;">4%</td><td bgcolor=3D"#F7D9DC" style=3D"font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bord=
-er-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;=
-font-weight:700;background:#F7D9DC;color:#C00000;">Not shared</td><td bgcolor=
-=3D"#F2F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;=
-">N/A</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;=
-border-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#=
-D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#D9F2D0" style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;borde=
-r-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;f=
-ont-weight:700;background:#D9F2D0;color:#00823B;">0.60</td><td bgcolor=3D"#F2=
-F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFF=
-FF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not r=
-el.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-ali=
-gn:center;white-space:nowrap;font-weight:700;">18-Dec</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">PineLabs (WIO) =E2=80=93 AaniPay</td><td style=3D"font-family:'Segoe UI=
-',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6px 5px;borde=
-r-bottom:1px solid #E3E5E8;text-align:center;">Impl</td><td bgcolor=3D"#F7D9D=
-C" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;pa=
-dding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;=
-text-align:center;font-weight:700;background:#F7D9DC;color:#C00000;">On-Hold<=
-/td><td bgcolor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,san=
-s-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border=
--right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC=
-;color:#C00000;">22%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe =
-UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px=
- solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:7=
-00;background:#D9F2D0;color:#00823B;">Shared</td><td bgcolor=3D"#F7D9DC" styl=
-e=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6=
-px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-al=
-ign:center;font-weight:700;background:#F7D9DC;color:#C00000;">37%</td><td bgc=
-olor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;fon=
-t-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px =
-solid #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC;color:#C00=
-000;">Parallel</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Ca=
-libri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid=
- #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;bac=
-kground:#D9F2D0;color:#00823B;">0.77</td><td bgcolor=3D"#D9F2D0" style=3D"fon=
-t-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;b=
-order-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:cent=
-er;font-weight:700;background:#D9F2D0;color:#00823B;">0%</td><td style=3D"fon=
-t-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#30343B;pad=
-ding:6px 5px;border-bottom:1px solid #E3E5E8;text-align:center;white-space:no=
-wrap;font-weight:700;">Bank</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">Network Intl =E2=80=93 Settlement R3 Drop-2</td><td style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6p=
-x 5px;border-bottom:1px solid #E3E5E8;text-align:center;">Impl</td><td bgcolo=
-r=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-s=
-ize:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px sol=
-id #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC;color:#C00000=
-;">Awaiting Fix</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',C=
-alibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px soli=
-d #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;ba=
-ckground:#D9F2D0;color:#00823B;">91%</td><td bgcolor=3D"#F7D9DC" style=3D"fon=
-t-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;b=
-order-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:cent=
-er;font-weight:700;background:#F7D9DC;color:#C00000;">Not shared</td><td bgco=
-lor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font=
--size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px s=
-olid #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC;color:#C000=
-00;">30%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,=
-Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFF=
-FF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;backgroun=
-d:#D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#FCF3CF" style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bo=
-rder-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:cente=
-r;font-weight:700;background:#FCF3CF;color:#A54B00;">1.64</td><td bgcolor=3D"=
-#F2F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:1=
-1px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #F=
-FFFFF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">No=
-t rel.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-=
-size:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-=
-align:center;white-space:nowrap;font-weight:700;">25-Nov</td></tr>
-<tr><td colspan=3D"10" bgcolor=3D"#F3F4F6" style=3D"background:#F3F4F6;font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;color:#7F7F7F;paddin=
-g:4px 8px;letter-spacing:1px;text-transform:uppercase;">Change requests</td><=
-/tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">Al Rajhi =E2=80=93 Branding &amp; URL Revamp Ph-2</td><td style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padd=
-ing:6px 5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bg=
-color=3D"#C4EDFC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;fo=
-nt-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px=
- solid #FFFFFF;text-align:center;font-weight:700;background:#C4EDFC;color:#1F=
-4E79;">Yet to Start</td><td bgcolor=3D"#C4EDFC" style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px =
-solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:70=
-0;background:#C4EDFC;color:#1F4E79;">0%</td><td bgcolor=3D"#D9F2D0" style=3D"=
-font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5p=
-x;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:c=
-enter;font-weight:700;background:#D9F2D0;color:#00823B;">Shared</td><td bgcol=
-or=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-=
-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px so=
-lid #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B0=
-0;">60%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,A=
-rial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFF=
-F;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;background=
-:#D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#F2F2F2" style=3D"font-=
-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bor=
-der-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center=
-;font-weight:700;background:#F2F2F2;color:#595959;">N/A</td><td bgcolor=3D"#F=
-2F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11p=
-x;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFF=
-FFF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not =
-rel.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-al=
-ign:center;white-space:nowrap;font-weight:700;">TBD</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">PineLabs (ENBD) =E2=80=93 Click to Pay Ph-2</td><td style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6p=
-x 5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolor=
-=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;=
-">In-Progress</td><td bgcolor=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Cal=
-ibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid =
-#FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;back=
-ground:#FCF3CF;color:#A54B00;">71%</td><td bgcolor=3D"#D9F2D0" style=3D"font-=
-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bor=
-der-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center=
-;font-weight:700;background:#D9F2D0;color:#00823B;">Shared</td><td bgcolor=3D=
-"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
-11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #=
-FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;">6=
-9%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Arial,=
-sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;bor=
-der-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#D9F=
-2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#FCF3CF" style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-b=
-ottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font=
--weight:700;background:#FCF3CF;color:#A54B00;">1.50</td><td bgcolor=3D"#F2F2F=
-2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;pa=
-dding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;=
-text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not rel.=
-</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:1=
-1px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-align:=
-center;white-space:nowrap;font-weight:700;">02-Dec</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">PineLabs (ENBD) =E2=80=93 NON-ASCII</td><td style=3D"font-family:'Segoe=
- UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6px 5px;bo=
-rder-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolor=3D"#FCF3=
-CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;p=
-adding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF=
-;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;">In-Prog=
-ress</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Aria=
-l,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;b=
-order-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#D=
-9F2D0;color:#00823B;">85%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'S=
-egoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-botto=
-m:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-wei=
-ght:700;background:#D9F2D0;color:#00823B;">Shared</td><td bgcolor=3D"#FCF3CF"=
- style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padd=
-ing:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;te=
-xt-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;">69%</td><t=
-d bgcolor=3D"#F7D9DC" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-seri=
-f;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right=
-:1px solid #FFFFFF;text-align:center;font-weight:700;background:#F7D9DC;color=
-:#C00000;">Parallel</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe U=
-I',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px =
-solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:70=
-0;background:#D9F2D0;color:#00823B;">0.50</td><td bgcolor=3D"#D9F2D0" style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6p=
-x 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-ali=
-gn:center;font-weight:700;background:#D9F2D0;color:#00823B;">0%</td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#303=
-43B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-align:center;white-s=
-pace:nowrap;font-weight:700;">30-Nov</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">PineLabs (ENBD) =E2=80=93 Multi paybylink</td><td style=3D"font-family:=
-'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6px =
-5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolor=3D=
-"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:=
-11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #=
-FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;">I=
-n-Progress</td><td bgcolor=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibr=
-i,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FF=
-FFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;backgro=
-und:#FCF3CF;color:#A54B00;">59%</td><td bgcolor=3D"#D9F2D0" style=3D"font-fam=
-ily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border=
--bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;fo=
-nt-weight:700;background:#D9F2D0;color:#00823B;">Shared</td><td bgcolor=3D"#F=
-CF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11p=
-x;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFF=
-FFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;">69%<=
-/td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Arial,san=
-s-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border=
--right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#D9F2D0=
-;color:#00823B;">SIT first (Auto)</td><td bgcolor=3D"#F2F2F2" style=3D"font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bord=
-er-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;=
-font-weight:700;background:#F2F2F2;color:#595959;">N/A</td><td bgcolor=3D"#F2=
-F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFF=
-FF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not r=
-el.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-ali=
-gn:center;white-space:nowrap;font-weight:700;">27-Nov</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">PineLabs (ENBD) =E2=80=93 Domain Whitelisting</td><td style=3D"font-fam=
-ily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:=
-6px 5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolo=
-r=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-s=
-ize:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px sol=
-id #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00=
-;">In-Progress</td><td bgcolor=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Ca=
-libri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid=
- #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;bac=
-kground:#FCF3CF;color:#A54B00;">70%</td><td bgcolor=3D"#D9F2D0" style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bo=
-rder-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:cente=
-r;font-weight:700;background:#D9F2D0;color:#00823B;">Shared</td><td bgcolor=
-=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;=
-">69%</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;=
-border-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#=
-D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#D9F2D0" style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;borde=
-r-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;f=
-ont-weight:700;background:#D9F2D0;color:#00823B;">1.00</td><td bgcolor=3D"#F2=
-F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFF=
-FF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not r=
-el.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-siz=
-e:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-ali=
-gn:center;white-space:nowrap;font-weight:700;">27-Nov</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">Network Intl =E2=80=93 Real Time Chargeback</td><td style=3D"font-famil=
-y:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6p=
-x 5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolor=
-=3D"#FCF3CF" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#FCF3CF;color:#A54B00;=
-">In-Progress</td><td bgcolor=3D"#C4EDFC" style=3D"font-family:'Segoe UI',Cal=
-ibri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid =
-#FFFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;back=
-ground:#C4EDFC;color:#1F4E79;">0%</td><td bgcolor=3D"#F7D9DC" style=3D"font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bord=
-er-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;=
-font-weight:700;background:#F7D9DC;color:#C00000;">Not shared</td><td bgcolor=
-=3D"#F2F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;=
-">N/A</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;=
-border-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#=
-D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#F2F2F2" style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;borde=
-r-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;f=
-ont-weight:700;background:#F2F2F2;color:#595959;">N/A</td><td bgcolor=3D"#F2F=
-2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;=
-padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFF=
-F;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;">Not re=
-l.</td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size=
-:11px;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-alig=
-n:center;white-space:nowrap;font-weight:700;">29-Jan-27</td></tr>
-<tr><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11=
-px;color:#30343B;padding:6px 8px;border-bottom:1px solid #E3E5E8;font-weight:=
-600;">Network Intl =E2=80=93 Multiple File Process</td><td style=3D"font-fami=
-ly:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;color:#595959;padding:6=
-px 5px;border-bottom:1px solid #E3E5E8;text-align:center;">CR</td><td bgcolor=
-=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#D9F2D0;color:#00823B;=
-">Completed</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calib=
-ri,Arial,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #F=
-FFFFF;border-right:1px solid #FFFFFF;text-align:center;font-weight:700;backgr=
-ound:#D9F2D0;color:#00823B;">100%</td><td bgcolor=3D"#F7D9DC" style=3D"font-f=
-amily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;bord=
-er-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;=
-font-weight:700;background:#F7D9DC;color:#C00000;">Not shared</td><td bgcolor=
-=3D"#F2F2F2" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-si=
-ze:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px soli=
-d #FFFFFF;text-align:center;font-weight:700;background:#F2F2F2;color:#595959;=
-">N/A</td><td bgcolor=3D"#D9F2D0" style=3D"font-family:'Segoe UI',Calibri,Ari=
-al,sans-serif;font-size:11px;padding:6px 5px;border-bottom:1px solid #FFFFFF;=
-border-right:1px solid #FFFFFF;text-align:center;font-weight:700;background:#=
-D9F2D0;color:#00823B;">SIT first</td><td bgcolor=3D"#FCF3CF" style=3D"font-fa=
-mily:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px;padding:6px 5px;borde=
-r-bottom:1px solid #FFFFFF;border-right:1px solid #FFFFFF;text-align:center;f=
-ont-weight:700;background:#FCF3CF;color:#A54B00;">2.00</td><td bgcolor=3D"#D9=
-F2D0" style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;padding:6px 5px;border-bottom:1px solid #FFFFFF;border-right:1px solid #FFFF=
-FF;text-align:center;font-weight:700;background:#D9F2D0;color:#00823B;">0%</t=
-d><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:11px=
-;color:#30343B;padding:6px 5px;border-bottom:1px solid #E3E5E8;text-align:cen=
-ter;white-space:nowrap;font-weight:700;">Done</td></tr>
-</table>
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:10px;=
-color:#7F7F7F;padding-top:6px;line-height:15px;">Exec: 0% blue =C2=B7 1=E2=80=
-=9349% red =C2=B7 50=E2=80=9379% amber =C2=B7 80=E2=80=93100% green &nbsp;|&n=
-bsp; SIT DD (defects per requirement): =E2=89=A41 green =C2=B7 1=E2=80=932 am=
-ber =C2=B7 &gt;2 red &nbsp;|&nbsp; UAT DRE: =E2=89=A410% green =C2=B7 11=E2=
-=80=9320% amber =C2=B7 &gt;20% red &nbsp;|&nbsp; Grey =3D not applicable or n=
-ot released</div></td></tr>
-<tr><td style=3D"padding:26px 32px 8px 32px;"><div style=3D"font-family:'Sego=
-e UI',Calibri,Arial,sans-serif;font-size:11px;letter-spacing:1px;color:#7F7F7=
-F;text-transform:uppercase;">Next 10 weeks</div><div style=3D"font-family:'Se=
-goe UI',Calibri,Arial,sans-serif;font-size:17px;font-weight:700;color:#30343B=
-;">Upcoming milestones</div></td></tr>
-<tr><td style=3D"padding:4px 32px 0 32px;"><table role=3D"presentation" width=
-=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#F7D=
-9DC;color:#C00000;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">25 Nov</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Netw=
-ork Intl =E2=80=93 Settlement R3 Drop-2</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; UAT delivery</span></td></=
-tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">27 Nov</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Pine=
-Labs (ENBD) =E2=80=93 Multi paybylink</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; SIT ETA</span></td></tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">27 Nov</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Pine=
-Labs (ENBD) =E2=80=93 Domain Whitelisting</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; SIT ETA</span></td></tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">30 Nov</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Pine=
-Labs (ENBD) =E2=80=93 NON-ASCII</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; SIT ETA</span></td></tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">02 Dec</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Pine=
-Labs (ENBD) =E2=80=93 Click to Pay Ph-2</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; SIT ETA =C2=B7 scope appro=
-val pending</span></td></tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">18 Dec</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>NeoL=
-eap-Blaze =E2=80=93 Neoleap Migration</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; Milestone</span></td></tr>
-<tr><td width=3D"96" valign=3D"middle" style=3D"padding:5px 0;">
-<div style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;background:#FCF=
-3CF;color:#A54B00;font-size:12px;font-weight:700;text-align:center;padding:5p=
-x 0;border-radius:4px;">29 Jan 2027</div></td>
-<td style=3D"padding:5px 0 5px 14px;font-family:'Segoe UI',Calibri,Arial,sans=
--serif;font-size:13px;color:#30343B;border-bottom:1px solid #E3E5E8;"><b>Netw=
-ork Intl =E2=80=93 Real Time Chargeback</b>
-<span style=3D"color:#7F7F7F;"> &nbsp;=C2=B7&nbsp; SIT ETA =C2=B7 awaiting re=
-lease</span></td></tr>
-</table></td></tr>
-<tr><td style=3D"padding:26px 24px 0 24px;"><table role=3D"presentation" widt=
-h=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td width=3D"=
-50%" valign=3D"top" style=3D"padding:0 8px;"><div style=3D"font-family:'Segoe=
- UI',Calibri,Arial,sans-serif;font-size:15px;font-weight:700;color:#30343B;pa=
-dding-bottom:6px;">Highlights this week</div><table role=3D"presentation" wid=
-th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td width=3D=
-"14" valign=3D"top" style=3D"padding:6px 0;"><span style=3D"display:inline-bl=
-ock;width:7px;height:7px;border-radius:4px;background:#00823B;"></span></td><=
-td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:13px;co=
-lor:#30343B;line-height:19px;padding:2px 0 6px 0;"><b>Multiple File Process</=
-b> (Network Intl) completed SIT: 100% executed, 0% UAT leakage.</td></tr><tr>=
-<td width=3D"14" valign=3D"top" style=3D"padding:6px 0;"><span style=3D"displ=
-ay:inline-block;width:7px;height:7px;border-radius:4px;background:#00823B;"><=
-/span></td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-=
-size:13px;color:#30343B;line-height:19px;padding:2px 0 6px 0;"><b>NON-ASCII</=
-b> (PineLabs ENBD) at 85% executed, SIT DD 0.50, 0% UAT leakage.</td></tr><tr=
-><td width=3D"14" valign=3D"top" style=3D"padding:6px 0;"><span style=3D"disp=
-lay:inline-block;width:7px;height:7px;border-radius:4px;background:#00823B;">=
-</span></td><td style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font=
--size:13px;color:#30343B;line-height:19px;padding:2px 0 6px 0;"><b>PineLabs (=
-ENBD)</b> CRs: unit test results shared on all four; automation at 69%.</td><=
-/tr></table></td><td width=3D"50%" valign=3D"top" style=3D"padding:0 8px;"><d=
-iv style=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:15px;fo=
-nt-weight:700;color:#30343B;padding-bottom:6px;">Quality actions in progress<=
-/div><table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacin=
-g=3D"0" border=3D"0"><tr><td width=3D"14" valign=3D"top" style=3D"padding:6px=
- 0;"><span style=3D"display:inline-block;width:7px;height:7px;border-radius:4=
-px;background:#A54B00;"></span></td><td style=3D"font-family:'Segoe UI',Calib=
-ri,Arial,sans-serif;font-size:13px;color:#30343B;line-height:19px;padding:2px=
- 0 6px 0;"><b>Unit testing:</b> get results shared on the remaining 5 release=
-s (Network Intl and Ecentric are the gaps).</td></tr><tr><td width=3D"14" val=
-ign=3D"top" style=3D"padding:6px 0;"><span style=3D"display:inline-block;widt=
-h:7px;height:7px;border-radius:4px;background:#A54B00;"></span></td><td style=
-=3D"font-family:'Segoe UI',Calibri,Arial,sans-serif;font-size:13px;color:#303=
-43B;line-height:19px;padding:2px 0 6px 0;"><b>Defect RCA:</b> enforce on rele=
-ases rated Amber or Red for SIT DD.</td></tr><tr><td width=3D"14" valign=3D"t=
-op" style=3D"padding:6px 0;"><span style=3D"display:inline-block;width:7px;he=
-ight:7px;border-radius:4px;background:#A54B00;"></span></td><td style=3D"font=
--family:'Segoe UI',Calibri,Arial,sans-serif;font-size:13px;color:#30343B;line=
--height:19px;padding:2px 0 6px 0;"><b>Separate SIT and UAT</b> on the 3 relea=
-ses running in parallel.</td></tr><tr><td width=3D"14" valign=3D"top" style=
-=3D"padding:6px 0;"><span style=3D"display:inline-block;width:7px;height:7px;=
-border-radius:4px;background:#A54B00;"></span></td><td style=3D"font-family:'=
-Segoe UI',Calibri,Arial,sans-serif;font-size:13px;color:#30343B;line-height:1=
-9px;padding:2px 0 6px 0;"><b>Automation:</b> raise AaniPay (37%) and Settleme=
-nt R3 (30%); whitelist the URL to start scripting on Neoleap Migration.</td><=
-/tr></table></td></tr></table></td></tr>
-<tr><td style=3D"padding:24px 32px 26px 32px;font-family:'Segoe UI',Calibri,A=
-rial,sans-serif;font-size:14px;color:#30343B;line-height:21px;">
-The full deck is attached for release-level detail. Happy to walk through any=
- of the above.<br><br>
-Regards,<br><b>[Your name]</b><br><span style=3D"color:#7F7F7F;">IQA =E2=80=
-=93 Major Accounts ME</span></td></tr>
-<tr><td bgcolor=3D"#F7F8F9" style=3D"background:#F7F8F9;border-top:1px solid =
-#E3E5E8;padding:12px 32px;font-family:'Segoe UI',Calibri,Arial,sans-serif;fon=
-t-size:10px;color:#7F7F7F;line-height:15px;">
-Source: Major_Accounts_M.E_IQA_QSR_KPI_20Nov2026_v1.8.pptx (Quality Status an=
-d Quality KPI slides) =C2=B7 data as of 20-Nov-2026 =C2=B7
-Overall tower status is an IQA assessment: Amber because 3 of 11 releases are=
- blocked and 1 release is Red on SIT DD, with no UAT or production leakage.
+<tr><td style=3D"padding:18px 28px 0 28px;font-family:'Segoe UI',Calibri,Aria=
+l,sans-serif;font-size:13px;color:#30343B;line-height:20px;">
+<b>Quality focus:</b> unit test results are missing on 5 releases and 3 run S=
+IT and UAT in parallel; no UAT or production leakage so far.
 </td></tr>
+<tr><td style=3D"padding:18px 28px 24px 28px;font-family:'Segoe UI',Calibri,A=
+rial,sans-serif;font-size:14px;color:#30343B;line-height:21px;">
+Release-level detail is in the attached deck.<br><br>Regards,<br><b>[Your nam=
+e]</b><br><span style=3D"color:#7F7F7F;">IQA =E2=80=93 Major Accounts ME</spa=
+n></td></tr>
+<tr><td bgcolor=3D"#F7F8F9" style=3D"background:#F7F8F9;border-top:1px solid =
+#E3E5E8;padding:10px 28px;font-family:'Segoe UI',Calibri,Arial,sans-serif;fon=
+t-size:10px;color:#7F7F7F;">
+Source: Major Accounts M.E IQA QSR KPI v1.8 =C2=B7 data as of 20-Nov-2026 =C2=
+=B7 Amber is an IQA assessment (3 of 11 blocked, 1 release red on SIT DD).</t=
+d></tr>
 </table></td></tr></table></body></html>
 
---===============2979712721252405758==--
+--===============0287224141537990492==--
 
---===============1289475262931115146==
+--===============6175522526148790469==
 Content-Type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment;
@@ -4851,4 +3993,4 @@ AB4AAAAAAAAAAAAAAAAAKjEDAGN1c3RvbVhtbC9fcmVscy9pdGVtMi54bWwucmVsc1BLAQItABQA
 BgAIAAAAIQB78wKjwwAAACgBAAAeAAAAAAAAAAAAAAAAADAzAwBjdXN0b21YbWwvX3JlbHMvaXRl
 bTMueG1sLnJlbHNQSwUGAAAAAEIAQgAiEwAANzUDAAAA
 
---===============1289475262931115146==--
+--===============6175522526148790469==--
